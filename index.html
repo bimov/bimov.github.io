@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>bimov — ML/DS · NLP · CV</title>
+  <meta property="og:title" content="bimov — ML/DS · NLP · CV" />
+  <meta property="og:description" content="Страничка - визитка" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="header.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Темная тема
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <style>
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.06); }
+    .grid-auto-fit { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 selection:bg-fuchsia-500 selection:text-white">
+  <header class="max-w-5xl mx-auto px-4 py-8 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="header.svg" alt="bimov" class="h-10 w-auto rounded" />
+      <span class="font-bold text-lg">bimov</span>
+    </a>
+    <nav class="hidden sm:flex gap-5 text-sm text-slate-300">
+      <a href="#projects" class="hover:text-white">Проекты</a>
+      <a href="#stats" class="hover:text-white">Статистика</a>
+      <a href="#contact" class="hover:text-white">Контакты</a>
+    </nav>
+    <button id="themeBtn" class="text-sm px-3 py-1.5 rounded-xl glass border border-white/10">🌓 Тема</button>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4">
+    <!-- Hero -->
+    <section class="text-center py-12">
+      <h1 class="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-sky-400 via-violet-500 to-amber-400 bg-clip-text text-transparent">
+        ML/DS · NLP · CV · Python
+      </h1>
+      <!-- Учёба -->
+      <div class="mt-6 max-w-3xl mx-auto" id="education">
+        <h2 class="text-xl font-semibold tracking-wide text-slate-200">Учёба</h2>
+        <div class="mt-3 grid gap-3 sm:grid-cols-2 text-left">
+          <div class="p-4 rounded-2xl glass border border-white/10">
+            <div class="text-xs uppercase tracking-wider text-slate-400">Университет</div>
+            <div class="mt-1 font-medium">СПбГЭТУ «ЛЭТИ»</div>
+            <div class="text-sm text-slate-300">ПМИ, 3&nbsp;курс</div>
+          </div>
+          <div class="p-4 rounded-2xl glass border border-white/10">
+            <div class="text-xs uppercase tracking-wider text-slate-400">Программа</div>
+            <div class="mt-1 font-medium">Академия Аналитиков Авито</div>
+            <div class="text-sm text-slate-300">Трек Data&nbsp;Science</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href="https://github.com/bimov" class="px-4 py-2 rounded-xl glass border border-white/10">GitHub</a>
+        <a href="#projects" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15">Проекты</a>
+        <a href="#contact" class="px-4 py-2 rounded-xl glass border border-white/10">Связаться</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-10">
+      <h2 class="text-2xl font-bold mb-4">Проекты</h2>
+      <div class="grid-auto-fit">
+        <a href="https://github.com/bimov/" class="p-5 rounded-2xl glass border border-white/10 block hover:scale-[1.01] transition">
+          <h3 class="font-semibold">Определение различных болезней головного мозга по снимкам МРТ</h3>
+          <p class="mt-1 text-sm text-slate-300">Научились определять болезнь Паркинсона, Альцгеймер и Склероз при помощи моделей компьютерного зрения.</p>
+        </a>
+        <a href="https://github.com/bimov/" class="p-5 rounded-2xl glass border border-white/10 block hover:scale-[1.01] transition">
+          <h3 class="font-semibold">Проекты в Академии Аналитиков Авито (DS трек)</h3>
+          <p class="mt-1 text-sm text-slate-300">1. Определение категории товара по заголовку.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="py-10">
+      <h2 class="text-2xl font-bold mb-4">Стек</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="p-5 rounded-2xl glass border border-white/10">
+          <h3 class="font-semibold">Языки</h3>
+          <div class="mt-2 flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 rounded-full border border-white/10 bg-white/5">Python</span>
+            <span class="px-3 py-1 rounded-full border border-white/10 bg-white/5">C++</span>
+          </div>
+        </div>
+        <div class="p-5 rounded-2xl glass border border-white/10">
+          <h3 class="font-semibold">Python · библиотеки</h3>
+          <div class="mt-2 flex flex-wrap gap-2 text-sm">
+            <span class="px-3 py-1 rounded-full border border-white/10 bg-white/5">NumPy</span>
+            <span class="px-3 py-1 rounded-full border border-white/10 bg-white/5">pandas</span>
+            <span class="px-3 py-1 rounded-full border border-white/10 bg-white/5">PyTorch</span>
+            <span class="px-3 py-1 rounded-full border border-white/10 bg-white/5">scikit-learn</span>
+            <span class="px-3 py-1 rounded-full border border-white/10 bg-white/5">Gensim</span>
+            <span class="px-3 py-1 rounded-full border border-white/10 bg-white/5">NLTK</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats" class="py-10">
+      <h2 class="text-2xl font-bold mb-4">Статистика</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <img class="rounded-xl border border-white/10" src="https://github-readme-stats.vercel.app/api?username=bimov&show_icons=true&rank_icon=github&theme=transparent" alt="GitHub stats" />
+        <img class="rounded-xl border border-white/10" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bimov&layout=compact&theme=transparent" alt="Top languages" />
+        <img class="rounded-xl border border-white/10 sm:col-span-2" src="https://streak-stats.demolab.com?user=bimov&theme=transparent" alt="Streak" />
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-10">
+      <h2 class="text-2xl font-bold mb-4">Контакты</h2>
+      <div class="grid-auto-fit">
+        <a href="mailto:dmitbay123@gmail.com" class="p-5 rounded-2xl glass border border-white/10 block">📬 Email</a>
+        <a href="https://t.me/bimov1" class="p-5 rounded-2xl glass border border-white/10 block">💬 Telegram</a>
+        <a href="https://github.com/bimov" class="p-5 rounded-2xl glass border border-white/10 block">🐙 GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-5xl mx-auto px-4 py-8 text-sm text-slate-400">
+    © <span id="year"></span> bimov
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('themeBtn').addEventListener('click', () => {
+      const html = document.documentElement;
+      const dark = html.classList.toggle('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
