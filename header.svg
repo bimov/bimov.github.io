@@ -13,8 +13,8 @@
 </defs>
 <rect width="100%" height="100%" fill="#0b1020"/>
 <g filter="url(#shadow)">
-<text x="50%" y="46%" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="256" fill="url(#g)" font-weight="2000">bimov</text>
-<text x="50%" y="62%" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="88" fill="#cbd5e1">DS</text>
+<text x="50%" y="56%" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="256" fill="url(#g)" font-weight="2000">bimov</text>
+<text x="50%" y="82%" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="88" fill="#cbd5e1">DS</text>
 </g>
 <rect x="0" y="0" width="100%" height="100%" fill="url(#glow)"/>
 <g opacity="0.18">
